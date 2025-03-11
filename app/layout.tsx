@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { PT_Serif } from "next/font/google";
 import "./globals.css";
+import Header from "./Components/layout/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const ptSerif = PT_Serif({
+  subsets: ["latin"], // Optimisation pour la langue
+  weight: ["400", "700"], // Ajouter le gras si nécessaire
+  style: ["normal", "italic"], // Styles disponibles
+});
 
 export const metadata: Metadata = {
   title: "Claire dans les nuages | Site en construction",
@@ -16,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={inter.className}>{children}</body>
+      <body className={ptSerif.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
