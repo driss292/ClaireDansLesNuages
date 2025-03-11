@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PT_Serif } from "next/font/google";
 import "./globals.css";
+import Header from "./Components/layout/Header";
 
 const ptSerif = PT_Serif({
   subsets: ["latin"], // Optimisation pour la langue
@@ -20,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={ptSerif.className}>{children}</body>
+      <body className={ptSerif.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
