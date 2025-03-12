@@ -23,12 +23,15 @@ export const navigationData = [
 
 export const mainPageData = [
   {
-    src: "/assets/picture-1.png",
+    id: 1,
+    src: "/assets/duchesse-2.png",
   },
   {
-    src: "/assets/picture-2.png",
+    id: 2,
+    src: "/assets/background-shoes.png",
   },
   {
-    src: "/assets/picture-3.png",
+    id: 3,
+    src: "/assets/paradis-3.png",
   },
 ];

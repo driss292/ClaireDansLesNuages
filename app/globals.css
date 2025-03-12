@@ -9,7 +9,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  background: url("/assets/background.png");
+  background: url("/assets/background-1.png");
   color: var(--foreground);
 }
 :root {
