@@ -1,3 +1,10 @@
-export default function MainItem({ src }: Readonly<{ src: string }>) {
-  return <img src={src} className="w-full h-full object-cover" />;
+import Image from "next/image";
+
+export default function MainItem({
+  src,
+  className,
+}: Readonly<{ src: string; className?: string }>) {
+  return (
+    <Image alt={src} width={550} height={120} src={src} className={className} />
+  );
 }

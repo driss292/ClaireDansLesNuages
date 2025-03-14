@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Copperplate-regular";
+  src: url("/fonts/copperlate/Copperplate.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Copperplate-light";
+  src: url("/fonts/copperlate/Copperplate-light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Copperplate-bold";
+  src: url("/fonts/copperlate/Copperplate-bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 html,
 body {
   padding: 0;
@@ -16,10 +35,3 @@ body {
   --background: #ffffff;
   --foreground: #838383;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */

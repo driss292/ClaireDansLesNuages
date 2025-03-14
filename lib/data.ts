@@ -25,13 +25,16 @@ export const mainPageData = [
   {
     id: 1,
     src: "/assets/duchesse-2.png",
+    className: "w-full h-full object-cover object-[15%]",
   },
   {
     id: 2,
-    src: "/assets/background-shoes.png",
+    src: "/assets/bg-shoes.png",
+    className: "w-full h-full object-cover",
   },
   {
     id: 3,
     src: "/assets/paradis-3.png",
+    className: "w-full h-full object-cover",
   },
 ];
