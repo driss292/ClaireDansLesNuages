@@ -6,7 +6,7 @@ export default function HomePage() {
     <main className="max-w-7xl mx-auto h-[calc(100vh-188px)] bg-white px-10 pb-10 pt-1 relative">
       <div className="h-full grid grid-rows-1 grid-cols-3 gap-4">
         {mainPageData.map((item) => (
-          <MainItem src={item.src} key={item.id} className={item.className} />
+          <MainItem src={item.src} key={item.id} variant={item.variant} />
         ))}
       </div>
       <div className="w-[550px] h-[120px] bg-white text-center absolute bottom-32 left-1/2 -translate-x-1/2 text-xl flex flex-col items-center justify-between">

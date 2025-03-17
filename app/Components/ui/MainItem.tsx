@@ -2,9 +2,18 @@ import Image from "next/image";
 
 export default function MainItem({
   src,
-  className,
-}: Readonly<{ src: string; className?: string }>) {
+  variant,
+}: Readonly<{ src: string; variant?: string }>) {
   return (
-    <Image alt={src} width={550} height={120} src={src} className={className} />
+    <div className="relative overflow-hidden">
+      <Image
+        alt={src}
+        src={src}
+        width={550}
+        height={120}
+        style={{ objectPosition: variant ?? "" }}
+        className={`absolute w-full h-full object-cover`}
+      />
+    </div>
   );
 }
