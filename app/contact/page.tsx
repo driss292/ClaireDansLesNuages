@@ -1,18 +1,26 @@
+import Image from "next/image";
+
 export default function ContactPage() {
   return (
-    <div className="max-w-7xl mx-auto h-[calc(100vh-188px)] bg-white px-4 sm:px-10 flex items-center justify-center">
-      <div className="max-w-[90%] sm:w-[475px] h-full  flex flex-col items-center justify-center">
-        <div className=" mt-7 w-full flex-1 flex items-center justify-center">
-          <div className="w-[260px] h-[260px] sm:w-[260px] sm:h-[260px] bg-red-500 rounded-full"></div>
+    <div className="max-w-7xl mx-auto h-[calc(100vh-188px)] bg-white px-10 pt-1 flex items-center justify-center">
+      <div className="max-w-[90%] sm:w-[475px]  flex flex-col items-center justify-center">
+        <div className="pt-7 w-full flex-1 flex items-center justify-center">
+          <div className="w-[260px] h-[260px] sm:w-[240px] sm:h-[240px]">
+            <Image
+              width={260}
+              height={260}
+              src="/assets/profil-2.jpg"
+              alt="photo profil"
+              className="w-full h-full object-cover border-[5px] border-[#686868] rounded-full"
+            />
+          </div>
         </div>
-        <div className="bg-white w-full flex-1 p-4 sm:p-6">
-          <h2 className="text-2xl sm:text-3xl text-center mb-3 sm:mb-5">
-            Contact
-          </h2>
-          <p className="text-center mb-5 sm:mb-7 text-sm sm:text-base">
-            claire_chevalier@live.fr | Tel : 06 88 71 64 83
+        <div className="w-full flex-1 p-4 sm:px-4 sm:pt-2">
+          <h2 className="text-2xl sm:text-3xl text-center sm:mb-3">Contact</h2>
+          <p className="text-center mb-5 sm:mb-4 text-sm sm:text-base">
+            claire_chevalier@live.fr | Tél : 06 88 71 64 83
           </p>
-          <form className="mb-6 sm:mb-10">
+          <form className="pb-6 sm:pb-10">
             <input
               type="text"
               placeholder="Nom *"
