@@ -34,5 +34,6 @@ body {
 :root {
   --background: #ffffff;
   --foreground: #5d5b5b;
+  --formBG: #f5f3f2;
   --formText: #aeaeae;
 }
