@@ -29,7 +29,7 @@ export const mainPageData = [
   },
   {
     id: 2,
-    src: "/assets/bg-shoes.png",
+    src: "/assets/shoes-bg.png",
   },
   {
     id: 3,
