@@ -3,7 +3,7 @@ import MainItem from "./Components/ui/MainItem";
 
 export default function HomePage() {
   return (
-    <main className="max-w-7xl mx-auto h-[calc(100vh-188px)] bg-white px-10 pb-10 pt-1 relative">
+    <main className="max-w-7xl mx-auto h-[calc(100vh-198px)] bg-white px-10 pb-10 pt-1 relative">
       <div className="h-full grid grid-rows-1 grid-cols-3 gap-4">
         {mainPageData.map((item) => (
           <MainItem src={item.src} key={item.id} variant={item.variant} />
