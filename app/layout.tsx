@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./Components/layout/Header";
+import Nav from "./Components/navigation/Nav";
 
 export const metadata: Metadata = {
   title: "Claire dans les nuages | Site en construction",
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="fr">
       <body className="h-screen flex flex-col">
         <Header />
+        <Nav />
         <main className="flex-1">{children}</main>
       </body>
     </html>

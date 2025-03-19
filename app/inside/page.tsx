@@ -1,13 +1,6 @@
 export default function InsidePage() {
   return (
-    <section className="max-w-7xl mx-auto bg-white px-10 pb-10 pt-1">
-      <div className="text-center mb-6">
-        <h1 className="text-3xl font-semibold">Inside Page</h1>
-        <p className="text-lg text-gray-600">
-          Explore the content inside this page
-        </p>
-      </div>
-
+    <section className="max-w-7xl mx-auto h-full bg-white px-10 pb-10 pt-1">
       <div className="space-y-6">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quas
@@ -38,6 +31,31 @@ export default function InsidePage() {
           laboriosam placeat cupiditate.
         </p>
 
+        <p>
+          Incidunt similique accusantium culpa facilis quasi labore? Odio
+          architecto sunt, ipsaendi dolore sint beatae blanditiis placeat
+          recusandae aliquam, sapiente, aut consequatur earum!
+        </p>
+        <p>
+          Incidunt similique accusantium culpa facilis quasi labore? Odio
+          architecto sunt, ipsaendi dolore sint beatae blanditiis placeat
+          recusandae aliquam, sapiente, aut consequatur earum!
+        </p>
+        <p>
+          Incidunt similique accusantium culpa facilis quasi labore? Odio
+          architecto sunt, ipsaendi dolore sint beatae blanditiis placeat
+          recusandae aliquam, sapiente, aut consequatur earum!
+        </p>
+        <p>
+          Incidunt similique accusantium culpa facilis quasi labore? Odio
+          architecto sunt, ipsaendi dolore sint beatae blanditiis placeat
+          recusandae aliquam, sapiente, aut consequatur earum!
+        </p>
+        <p>
+          Incidunt similique accusantium culpa facilis quasi labore? Odio
+          architecto sunt, ipsaendi dolore sint beatae blanditiis placeat
+          recusandae aliquam, sapiente, aut consequatur earum!
+        </p>
         <p>
           Incidunt similique accusantium culpa facilis quasi labore? Odio
           architecto sunt, ipsaendi dolore sint beatae blanditiis placeat

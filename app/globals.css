@@ -20,9 +20,9 @@
   font-weight: bold;
   font-style: normal;
 }
-* {
+/* * {
   box-shadow: 0 0 0 3px red inset;
-}
+} */
 
 html,
 body {
@@ -31,8 +31,11 @@ body {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  background: url("/assets/background-1.png");
   color: var(--foreground);
+  background: url("/assets/fond3.jpg");
+  background-size: contain; /* Redimensionne l'image pour qu'elle soit entièrement visible sans la déformer */
+  background-repeat: repeat; /* Répète l'image pour couvrir tout l'arrière-plan */
+  background-position: center; /* Centrer l'image */
 }
 :root {
   --background: #ffffff;
