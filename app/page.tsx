@@ -35,7 +35,7 @@ export default function HomePage() {
       </div>
       <div className="w-[75%] max-w-[560px] h-auto bg-white text-center absolute left-1/2 -translate-x-1/2 top-[40%] lg:top-auto lg:bottom-32 text-base sm:text-lg md:text-lg flex flex-col items-center justify-between px-1 pb-1">
         <div className="pb-4">
-          <p className="text-[9px] leading-1 sm:text-[11px] md:text-[12px] text-[var(--foreground)] font-copperplateLight tracking-wider">
+          <p className="text-[9px] leading-1 sm:text-[11px] md:text-[13px] text-[var(--foreground)] font-copperplateLight tracking-wider">
             CLAIRE DANS LES NUAGES,
           </p>
           <p className="text-[8px] leading-none sm:text-[11px] md:text-[13px] font-copperplateLight tracking-wider">
