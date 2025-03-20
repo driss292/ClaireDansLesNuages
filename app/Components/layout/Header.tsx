@@ -9,6 +9,7 @@ export default function Header() {
         width={250}
         height={250}
         alt="Logo"
+        priority={true} // Ajoutez ceci si l'image est au-dessus du pli
       />
     </header>
   );
