@@ -86,6 +86,11 @@ export default function InsidePage() {
           architecto sunt, ipsaendi dolore sint beatae blanditiis placeat
           recusandae aliquam, sapiente, aut consequatur earum!
         </p>
+        <p>
+          Incidunt similique accusantium culpa facilis quasi labore? Odio
+          architecto sunt, ipsaendi dolore sint beatae blanditiis placeat
+          recusandae aliquam, sapiente, aut consequatur earum!
+        </p>
       </div>
     </section>
   );
