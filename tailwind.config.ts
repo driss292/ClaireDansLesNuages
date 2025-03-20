@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        "custom-inset": "inset 0 0 0 3px red",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
