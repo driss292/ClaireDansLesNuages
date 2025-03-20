@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function ContactPage() {
   return (
-    <section className="max-w-7xl mx-auto h-full bg-white px-10 pb-10 pt-1 flex flex-col items-center justify-center">
-      <div className="max-w-[90%] sm:w-[475px]  flex flex-col items-center justify-center">
-        <div className="pt-7 w-full flex-1 flex items-center justify-center">
-          <div className="w-[150px] h-[150px] md:w-[250px] md:h-[250px] sm:w-[240px] sm:h-[240px]">
+    <section className="max-w-7xl mx-auto max-h-screen h-full bg-white px-10 pb-10 pt-1 flex flex-col items-center justify-center">
+      <div className="max-w-[90%] sm:w-[475px] h-full flex flex-col justify-around">
+        <div className="w-full flex-1/3 flex items-start justify-center ">
+          <div className="w-[240px] h-[240px] md:w-[250px] md:h-[250px] sm:w-[240px] sm:h-[240px]">
             <Image
               width={280}
               height={280}
@@ -15,16 +15,17 @@ export default function ContactPage() {
             />
           </div>
         </div>
-        <div className="w-full flex-1 p-0 sm:px-4">
-          <h2 className="text-xl sm:text-3xl text-center sm:mb-3 font-copperplateRegular">
+        <div className="w-full flex-2/3 p-0 sm:px-4">
+          <h2 className="text-lg mb-10 sm:text-3xl text-center sm:mb-3 font-copperplateRegular">
             Où me Contacter ?
           </h2>
-          <p className="text-center font-copperplateLight text-[10px] sm:text-xs md:text-sm lg:text-lg">
+          <p className="text-center mb-1 font-copperplateLight text-xs sm:text-xs md:text-sm lg:text-lg">
             clairedanslesnuages@hotmail.com
           </p>
-          <p className="text-center mb-5 sm:mb-4 text-sm font-copperplateLight sm:text-base">
+          <p className="text-center pb-2 sm:mb-4 text-sm font-copperplateLight sm:text-base">
             06.88.71.64.83
           </p>
+
           <form className="pb-0">
             <input
               type="text"
@@ -50,6 +51,7 @@ export default function ContactPage() {
                 Envoyer
               </button>
             </div>
+            {/* <p className="text-center pt-5">Lien vers CV</p> */}
           </form>
         </div>
       </div>
