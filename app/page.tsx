@@ -1,37 +1,29 @@
-import Image from "next/image";
-import Logo from "../public/logo-Claire-chevalier.svg";
+import { mainPageData } from "@/lib/data";
+import MainItem from "./Components/ui/MainItem";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div
-      className="min-h-screen flex justify-center items-center"
-      style={{ backgroundImage: "url('/assets/background-2.jpg')" }}
-    >
-      {/* Logo et Contenu Principal */}
-      <main className="max-w-4xl mx-auto  px-4">
-        {/* <div className="text-center mb-16">
-          <div className="relative inline-block">
-          </div>
-        </div> */}
-
-        {/* Message "En travaux" */}
-        <div className="bg-white mt-auto p-48 shadow-md text-center mb-16">
-          <Image
-            width={150}
-            height={150}
-            src={Logo}
-            alt="Logo"
-            className="mb-8"
-            style={{ width: "455px" }}
-          />
-          <h2 className="text-3xl text-gray-700 mb-8 mt-14 tracking-wide font-light">
-            SITE EN COURS DE CRÉATION
-          </h2>
-          <p className="text-gray-500 mb-6 tracking-wide">
-            ALLIER LA RÊVERIE AU DESIGN
+    <main className="max-w-7xl mx-auto h-[calc(100vh-188px)] bg-white px-10 pb-10 pt-1 relative">
+      <div className="h-full grid grid-rows-1 grid-cols-3 gap-4">
+        {mainPageData.map((item) => (
+          <MainItem src={item.src} key={item.id} variant={item.variant} />
+        ))}
+      </div>
+      <div className="w-[550px] h-[120px] bg-white text-center absolute bottom-32 left-1/2 -translate-x-1/2 text-xl flex flex-col items-center justify-between">
+        <div>
+          <p className="text-[13px] text-[var(--foreground)] font-copperplateLight  tracking-wider pt-1">
+            CLAIRE DANS LES NUAGES,
+          </p>
+          <p className="text-[13px] font-copperplateLight tracking-wider">
+            ALLIER LA RÊVERIE AU DESIGN.
           </p>
         </div>
-      </main>
-    </div>
+        <div>
+          <p className="text-[13px] mb-2 font-copperplateLight tracking-wider">
+            DESIGNER, CONCEPTRICE 3D, GRAPHISTE, DEPUIS 2014.
+          </p>
+        </div>
+      </div>
+    </main>
   );
 }
