@@ -1,37 +1,53 @@
 import Image from "next/image";
-import Logo from "../public/logo-Claire-chevalier.svg";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div
-      className="min-h-screen flex justify-center items-center"
-      style={{ backgroundImage: "url('/assets/background-2.jpg')" }}
-    >
-      {/* Logo et Contenu Principal */}
-      <main className="max-w-4xl mx-auto  px-4">
-        {/* <div className="text-center mb-16">
-          <div className="relative inline-block">
-          </div>
-        </div> */}
-
-        {/* Message "En travaux" */}
-        <div className="bg-white mt-auto p-48 shadow-md text-center mb-16">
+    <section className="max-w-7xl mx-auto h-full bg-white px-10 pb-10 pt-1 relative">
+      <div className="h-full grid lg:grid-rows-1 lg:grid-cols-3 grid-cols-1 grid-rows-3 gap-4">
+        <div className="relative overflow-hidden">
           <Image
-            width={150}
-            height={150}
-            src={Logo}
-            alt="Logo"
-            className="mb-8"
-            style={{ width: "455px" }}
+            src={"/assets/duchesse-2.png"}
+            alt="duchesse-2"
+            width={550}
+            height={120}
+            className={`absolute w-full h-full object-cover object-[15%]`}
           />
-          <h2 className="text-3xl text-gray-700 mb-8 mt-14 tracking-wide font-light">
-            SITE EN COURS DE CRÉATION
-          </h2>
-          <p className="text-gray-500 mb-6 tracking-wide">
-            ALLIER LA RÊVERIE AU DESIGN
+        </div>
+        <div className="relative overflow-hidden">
+          <Image
+            src={"/assets/shoes-bg.png"}
+            alt="shoes-bg"
+            width={550}
+            height={120}
+            priority
+            className={`absolute w-full h-full object-cover`}
+          />
+        </div>
+        <div className="relative overflow-hidden">
+          <Image
+            src={"/assets/paradis-3.png"}
+            alt="paradis-3"
+            width={550}
+            height={120}
+            className={`absolute w-full h-full object-cover`}
+          />
+        </div>
+      </div>
+      <div className="w-[75%] max-w-[560px] h-auto bg-white text-center absolute left-1/2 -translate-x-1/2 top-[40%] lg:top-auto lg:bottom-32 text-base sm:text-lg md:text-lg flex flex-col items-center justify-between px-1 pb-1">
+        <div className="pb-4">
+          <p className="text-[9px] leading-1 sm:text-[11px] md:text-[12px] text-[var(--foreground)] font-copperplateLight tracking-wider">
+            CLAIRE DANS LES NUAGES,
+          </p>
+          <p className="text-[8px] leading-none sm:text-[11px] md:text-[13px] font-copperplateLight tracking-wider">
+            ALLIER LA RÊVERIE AU DESIGN.
           </p>
         </div>
-      </main>
-    </div>
+        <div className="pt-4">
+          <p className="text-[9px] sm:text-[11px] md:text-[13px] font-copperplateLight tracking-wider">
+            DESIGNER, CONCEPTRICE 3D, GRAPHISTE, DEPUIS 2014.
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }
