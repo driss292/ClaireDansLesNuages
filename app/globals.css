@@ -36,6 +36,8 @@ body {
   background-size: contain; /* Redimensionne l'image pour qu'elle soit entièrement visible sans la déformer */
   background-repeat: repeat; /* Répète l'image pour couvrir tout l'arrière-plan */
   background-position: center; /* Centrer l'image */
+  overflow-y: scroll; /* Réserve l'espace même si la scrollbar est masquée */
+  scrollbar-width: none;
 }
 :root {
   --background: #ffffff;
