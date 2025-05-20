@@ -5,7 +5,7 @@ export default function ContactPage() {
     <section className="max-w-7xl mx-auto max-h-screen h-full bg-white px-10 pb-10 pt-1 flex flex-col items-center justify-center">
       <div className="max-w-[90%] sm:w-[475px] h-full flex flex-col justify-around">
         <div className="w-full flex-1/3 flex items-start justify-center ">
-          <div className="w-[240px] h-[240px] md:w-[250px] md:h-[250px] sm:w-[240px] sm:h-[240px]">
+          <div className="w-[230px] h-[230px] md:w-[270px] md:h-[270px] sm:w-[240px] sm:h-[240px]">
             <Image
               width={280}
               height={280}
@@ -16,7 +16,7 @@ export default function ContactPage() {
           </div>
         </div>
         <div className="w-full flex-2/3 p-0 sm:px-4">
-          <h2 className="text-lg mb-10 sm:text-3xl text-center sm:mb-3 font-copperplateRegular">
+          <h2 className="text-lg mt-1 mb-10 sm:text-3xl text-center sm:mb-3 font-copperplateRegular">
             Où me Contacter ?
           </h2>
           <p className="text-center mb-1 font-copperplateLight text-xs sm:text-xs md:text-sm lg:text-lg">
