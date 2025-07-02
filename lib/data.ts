@@ -4,8 +4,8 @@ export const navigationData = [
     href: "/",
   },
   {
-    name: "INTERIEUR",
-    href: "/inside",
+    name: "ESPACE",
+    href: "/space",
   },
   {
     name: "DESIGN",
@@ -34,5 +34,45 @@ export const mainPageData = [
   {
     id: 3,
     src: "/assets/paradis-3.png",
+  },
+];
+
+export const insidePageData = [
+  {
+    id: 1,
+    title: "Tombé du ciel",
+    images: [
+      "/assets/placeholder.png",
+      "/assets/placeholder.png",
+      "/assets/placeholder.png",
+    ],
+  },
+  {
+    id: 2,
+    title: "S'habiller en poésie",
+    images: [
+      "/assets/placeholder.png",
+      "/assets/placeholder.png",
+      "/assets/placeholder.png",
+    ],
+  },
+  {
+    id: 3,
+    title: "Paradis bleu / paradis rose",
+    images: [
+      "/assets/placeholder.png",
+      "/assets/placeholder.png",
+      "/assets/placeholder.png",
+    ],
+  },
+  {
+    id: 4,
+    title: "Pavo",
+    images: [
+      "/assets/placeholder.png",
+      "/assets/placeholder.png",
+      "/assets/placeholder.png",
+      "/assets/placeholder.png",
+    ],
   },
 ];
