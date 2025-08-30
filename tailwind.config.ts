@@ -1,4 +1,5 @@
-import type { Config } from "tailwindcss";
+import { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 export default {
   content: [
@@ -8,9 +9,23 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        "custom-inset": "inset 0 0 0 3px red",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        copperplateRegular: [
+          "Copperplate-regular",
+          ...defaultTheme.fontFamily.sans,
+        ], // Ajout de la police
+        copperplateLight: [
+          "Copperplate-light",
+          ...defaultTheme.fontFamily.sans,
+        ], // Ajout de la police
+        copperplateBold: ["Copperplate-bold", ...defaultTheme.fontFamily.sans], // Ajout de la police
       },
     },
   },

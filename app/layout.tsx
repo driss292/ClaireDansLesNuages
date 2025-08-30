@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import Header from "./Components/layout/Header";
+import Nav from "./Components/navigation/Nav";
 
 export const metadata: Metadata = {
   title: "Claire dans les nuages | Site en construction",
@@ -16,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={inter.className}>{children}</body>
+      <body className="h-screen flex flex-col">
+        <Header />
+        <Nav />
+        <main className="flex-1">{children}</main>
+      </body>
     </html>
   );
 }
